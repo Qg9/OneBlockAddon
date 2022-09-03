@@ -1,0 +1,38 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.6.21'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+}
+
+group = 'fr.stonks'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    maven { url = "https://repo.papermc.io/repository/maven-public/" }
+
+    mavenCentral()
+
+    maven { url 'https://repo.bg-software.com/repository/api/' }
+    maven { url 'https://repo.extendedclip.com/content/repositories/placeholderapi/' }
+
+    maven { url = 'https://repo.rapture.pw/repository/maven-snapshots/' }
+    maven { url = 'https://repo.rapture.pw/repository/maven-snapshots/' }
+    maven { url = "https://jitpack.io" }
+}
+
+dependencies {
+    compileOnly "io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
+
+    implementation 'org.xerial:sqlite-jdbc:3.39.2.1'
+    implementation 'org.jetbrains.exposed:exposed-core:0.39.2'
+    implementation 'org.jetbrains.exposed:exposed-jdbc:0.39.2'
+
+    compileOnly 'me.clip:placeholderapi:2.11.2'
+    compileOnly 'com.bgsoftware:SuperiorSkyblockAPI:1.11.1'
+    implementation 'com.github.Qg9:StonksCommand:0.3'
+}
+
+shadowJar {
+    libsDirName = "z_export"
+    destinationDir(file("C:\\Server\\1.19\\plugins"))
+}

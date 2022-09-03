@@ -1,0 +1,7 @@
+name: OneBlock
+author: Qg
+version: 0.1
+main: fr.qg.oneblock.OneblockPlugin
+api-version: 1.18
+depend:
+  - SuperiorSkyblock2

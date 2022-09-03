@@ -1,0 +1,34 @@
+##
+##
+####
+####    ██████   ██████                ██████  ██      ██    ██  ██████  ██ ███    ██
+####   ██    ██ ██                     ██   ██ ██      ██    ██ ██       ██ ████   ██
+####   ██    ██ ██   ███     █████     ██████  ██      ██    ██ ██   ███ ██ ██ ██  ██
+####   ██ ▄▄ ██ ██    ██               ██      ██      ██    ██ ██    ██ ██ ██  ██ ██
+####    ██████   ██████                ██      ███████  ██████   ██████  ██ ██   ████
+####      ▀▀
+##
+##
+
+##
+### Plugin réalisé par Qg#6727
+### Support garantit à vie - Pour toute demande de supplément, n'hésitez pas à me contacter
+##
+
+# Liste des phases disponible sur le serveur
+# Fonctionnement de la rareté :
+# Il y a 18 fois + de chance d'avoir un commun qu'un très très rare
+# Il y a 9 fois + de chance d'avoir un rare qu'un très très rare
+# Il y a 3 fois + de chance d'avoir un très rare qu'un très très rare
+
+# Liste des Raretés : COMMON, RARE, VERY_RARE, VERY_VERY_RARE
+# Liste des Materieux : https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+
+# Ceci est un token, il est utilisé pour les commandes et le stockage
+common1:
+  # Material : Rareté
+  DIRT: COMMON
+  STONE: VERY_RARE
+  COAL_BLOCK: VERY_VERY_RARE
+nether:
+  DEEPSLATE_IRON_ORE: COMMON

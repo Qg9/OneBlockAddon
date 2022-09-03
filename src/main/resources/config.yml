@@ -1,0 +1,42 @@
+##
+##
+####
+####    ██████   ██████                ██████  ██      ██    ██  ██████  ██ ███    ██
+####   ██    ██ ██                     ██   ██ ██      ██    ██ ██       ██ ████   ██
+####   ██    ██ ██   ███     █████     ██████  ██      ██    ██ ██   ███ ██ ██ ██  ██
+####   ██ ▄▄ ██ ██    ██               ██      ██      ██    ██ ██    ██ ██ ██  ██ ██
+####    ██████   ██████                ██      ███████  ██████   ██████  ██ ██   ████
+####      ▀▀
+##
+##
+
+##
+### Plugin réalisé par Qg#6727
+### Support garantit à vie - Pour toute demande de supplément, n'hésitez pas à me contacter
+##
+
+## Partie configuration du plugin
+Config:
+  # Liste des phases par défaut dans les mondes skyblocks
+  # Utilisez uniquement un token présent dans le ./phases.yml
+  default:
+    # OneBlock du monde normal, celui par défaut lorsque le joueur créer une ile
+    OVERWORLD: "common1"
+    # OneBlock du monde nether, celui accessible à l'aide d'un portail
+    OTHERWORLD: "nether"
+
+## Liste des Messages configurables sur le plugin
+Messages:
+  # Message d'erreur si le joueur n'a pas d'ile
+  ERROR_NO_ISLAND: "&cTu n'as pas d'ile !"
+  # Message d'erreur si le joueur ne vise aucun block en souhaitant changer la position
+  # De son oneblock
+  ERROR_NO_BLOCK_TARGETED: "&cTu dois viser un block !"
+  # Message d'erreur si le joueur change la phase de son oneblock en spécifiant
+  # L'environnement de monde "custom", "end" ou "nether" si ceux ci ne sont pas activé dans superiorskyblock
+  ERROR_TYPE_DOES_NOT_EXIST: "&cCe type d'environnement n'est asssocié à aucune ile !"
+  # Message de validation quant au changement de la position du oneblock
+  CHANGE_ONEBLOCK_POSITION: "&7Tu as la position de ton OneBlock !"
+  # Message de validation quant au changement de la phase du oneblock
+  # Utilisez %player% pour le nom de la cible
+  CHANGE_ONEBLOCK_PHASE: "&7Tu as changé la phase de l'ile du joueur : %player% !"
